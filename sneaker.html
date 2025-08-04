@@ -29,68 +29,46 @@
     </div>
   </header>
   <body>
-    <div class="container">
+    <body>
       <div class="product-container">
+        <!-- Left: Image Section -->
         <div class="image-section">
-          <img
-            id="mainImage"
-            src="images/sneaker1.jpg"
-            alt="Main Sneaker"
-            class="main-image"
-          />
-
+          <img id="mainImage" src="images/image-product-1.jpg" alt="Main Sneaker" class="main-image">
+    
           <div class="thumbnails">
-            <img
-              src="images/sneaker1.jpg"
-              alt="View 1"
-              onclick="changeImage(this)"
-            />
-            <img
-              src="images/sneaker2.jpg"
-              alt="View 2"
-              onclick="changeImage(this)"
-            />
-            <img
-              src="images/sneaker3.jpg"
-              alt="View 3"
-              onclick="changeImage(this)"
-            />
-            <img
-              src="images/sneaker4.jpg"
-              alt="View 4"
-              onclick="changeImage(this)"
-            />
+            <img src="images/image-product-1.jpg" onclick="changeImage(this)">
+            <img src="images/image-product-2.jpg" onclick="changeImage(this)">
+            <img src="images/image-product-3.jpg" onclick="changeImage(this)">
+            <img src="images/image-product-4.jpg" onclick="changeImage(this)">
           </div>
-
+    
           <div class="mobile-nav">
             <button onclick="prevImage()">← Prev</button>
             <button onclick="nextImage()">Next →</button>
           </div>
         </div>
-
+    
+        <!-- Right: Text Section -->
         <div class="text-section">
-          <h2>Product Title</h2>
-          <p>Product description goes here...</p>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything the
+            weather can offer.
+          </p>
+          <div class="price">$125.00 <span class="discount">50% off</span></div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn">-</button>
+              <input type="text" class="qty-input" value="0" readonly />
+              <button class="qty-btn">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart 🛒</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="product-details">
-      <h1>Fall Limited Edition Sneakers</h1>
-      <p>
-        These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything the
-        weather can offer.
-      </p>
-      <div class="price">$125.00 <span class="discount">50% off</span></div>
-      <div class="product-actions">
-        <div class="quantity-selector">
-          <button class="qty-btn">-</button>
-          <input type="text" class="qty-input" value="0" readonly />
-          <button class="qty-btn">+</button>
-        </div>
-        <button class="add-to-cart">Add to Cart 🛒</button>
-      </div>
-    </div>
+    
+      <script src="script.js"></script>
+    </body>
   </body>
 </html>

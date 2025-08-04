@@ -156,109 +156,121 @@ body {
 }
 /* === Thumbnail Gallery Enhancements === */
 .thumbnails img {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .thumbnails img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* === Quantity Selector Unified Styling === */
-  .qty-btn {
-    background-color: #ff6600; /* Matches Add to Cart */
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .qty-input {
-    width: 40px;
-    height: 30px;
-    text-align: center;
-    border: none;
-    font-size: 18px;
-    background-color: #fff;
-    color: #333;
-    margin: 0 5px;
-    border-radius: 5px;
-  }
-  
-  /* === Add to Cart Button Consistency === */
-  .add-to-cart {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  /*today*/
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* === Quantity Selector Unified Styling === */
+.qty-btn {
+  background-color: #f5f2f2; /* Matches Add to Cart */
+  color:#ff6600;
+  border: none;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.qty-input {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  background-color: #f5f2f2;
+  color: #333;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+/* === Add to Cart Button Consistency === */
+.add-to-cart {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*today*/
+.product-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #fff;
+}
+.image-section,
+.text-section {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.image-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+}
+
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mobile-nav button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
   .product-container {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: ;
   }
-  
-  .image-section {
-    flex: 1;
-    max-width: 400px;
-  }
-  
-  .text-section {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .main-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-  }
-  
-  .thumbnails {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .thumbnails img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .thumbnails img:hover {
-    transform: scale(1.05);
-  }
-  
-  .mobile-nav {
-    display: none;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .mobile-nav button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Mobile adjustments */
-  @media (max-width: 600px) {
-    .product-container {
-      flex-direction:
+}
