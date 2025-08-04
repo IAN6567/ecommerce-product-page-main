@@ -274,3 +274,14 @@ body {
     flex-direction: ;
   }
 }
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .text-section {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
