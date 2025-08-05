@@ -8,6 +8,7 @@ function updateQuantity(amount) {
  * Adds the selected quantity of items to the cart.
  * If quantity is 0, the function exits early.
  *  it displays the cart count and populates the cart content.
+ *  it displays the cart count and populates the cart content.
  */
 function addToCart() {
   if (quantity === 0) return; // Do nothing if no items are selected
