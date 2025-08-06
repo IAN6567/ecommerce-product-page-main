@@ -59,3 +59,4 @@ function changeImage(el) {
   // Add 'selected' class to the clicked thumbnail
   el.classList.add("selected");
 }
+
